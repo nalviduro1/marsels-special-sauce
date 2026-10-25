@@ -9,7 +9,7 @@
   <meta name="description" content="Easy hot sauce recipes made with Marsel's Special Sauce: crispy hot wings, spicy honey butter, upgraded spicy mayo, hot honey pizza, breakfast tacos, Bloody Marys and more.">
   <link rel="canonical" href="https://www.marselsspecialsauce.com/recipes.html">
   <meta name="robots" content="index, follow, max-image-preview:large">
-  <meta name="theme-color" content="#c8102e">
+  <meta name="theme-color" content="#12100c">
 
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Marsel's Special Sauce">
@@ -21,13 +21,11 @@
   <meta name="twitter:title" content="Hot Sauce Recipes – Marsel's Special Sauce">
   <meta name="twitter:description" content="Easy recipes that put Marsel's Special Sauce on everything.">
   <meta name="twitter:image" content="https://www.marselsspecialsauce.com/assets/og-image.jpg">
-
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="site.webmanifest">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Shrikhand&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Lato:wght@400;700&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 
   <!-- Structured data. Google shows recipe rich results only when each recipe has a real photo:
@@ -167,55 +165,72 @@
 <body>
 
   <!-- Shared illustrations (same set on every page so cart thumbnails always render).
-       Swap for real product photos when you have them. -->
+       Swap for real product photography when you have it. -->
   <svg width="0" height="0" style="position:absolute" aria-hidden="true">
     <defs>
       <linearGradient id="glass" x1="0" x2="1">
-        <stop offset="0" stop-color="#8f0a1f"/>
-        <stop offset=".45" stop-color="#e3242b"/>
-        <stop offset="1" stop-color="#7a0819"/>
+        <stop offset="0" stop-color="#3a0806"/>
+        <stop offset=".38" stop-color="#8e1c15"/>
+        <stop offset=".55" stop-color="#a6261c"/>
+        <stop offset="1" stop-color="#2b0604"/>
+      </linearGradient>
+      <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#f3dc95"/>
+        <stop offset=".45" stop-color="#c9a24f"/>
+        <stop offset=".72" stop-color="#a9853b"/>
+        <stop offset="1" stop-color="#e9cf86"/>
       </linearGradient>
       <symbol id="bottle" viewBox="0 0 200 420">
-        <rect x="80" y="8" width="40" height="44" rx="7" fill="#1d1a17"/>
-        <rect x="80" y="40" width="40" height="6" fill="#f5b700"/>
         <path d="M87 52h26v70c0 22 37 34 37 78v190c0 14-9 22-22 22H72c-13 0-22-8-22-22V200c0-44 37-56 37-78z" fill="url(#glass)"/>
-        <rect x="58" y="222" width="84" height="132" rx="10" fill="#fff6e5"/>
-        <rect x="58" y="222" width="84" height="22" rx="10" fill="#f5b700"/>
-        <rect x="58" y="234" width="84" height="10" fill="#f5b700"/>
-        <text x="100" y="238" text-anchor="middle" font-family="Bricolage Grotesque, sans-serif" font-weight="800" font-size="9" fill="#1d1a17" letter-spacing="1">SINCE DAY 1</text>
-        <text x="100" y="278" text-anchor="middle" font-family="Shrikhand, cursive" font-size="18" fill="#c8102e">Marsel's</text>
-        <text x="100" y="298" text-anchor="middle" font-family="Bricolage Grotesque, sans-serif" font-weight="800" font-size="9" fill="#1d1a17" letter-spacing="1">SPECIAL SAUCE</text>
-        <path d="M92 314c6-4 14-3 18 2 6 8 0 24-16 26 8-6 10-14 6-20-3 4-8 4-8-8z" fill="#c8102e"/>
-        <path d="M106 312c2-4 6-6 10-5-3 1-6 3-7 6z" fill="#2f8f3a"/>
-        <path d="M66 140c-8 20-8 60-6 230" stroke="#fff" stroke-opacity=".28" stroke-width="7" stroke-linecap="round" fill="none"/>
+        <rect x="82" y="6" width="36" height="50" rx="3" fill="#15120e"/>
+        <path d="M88 12v38M94 12v38M100 12v38M106 12v38M112 12v38" stroke="#2a251e" stroke-width="1.2"/>
+        <rect x="82" y="44" width="36" height="8" fill="url(#gold)"/>
+        <rect x="86" y="62" width="28" height="16" fill="url(#gold)"/>
+        <text x="100" y="73" text-anchor="middle" font-family="Montserrat, sans-serif" font-weight="700" font-size="5" letter-spacing="1" fill="#12100c">M·S·S</text>
+        <rect x="56" y="214" width="88" height="148" rx="2" fill="#12100c"/>
+        <rect x="61" y="219" width="78" height="138" rx="1" fill="none" stroke="url(#gold)" stroke-width="1"/>
+        <text x="100" y="244" text-anchor="middle" font-family="Montserrat, sans-serif" font-weight="600" font-size="5.5" letter-spacing="2" fill="#e8c766">SMALL BATCH</text>
+        <text x="100" y="281" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-style="italic" font-weight="600" font-size="25" fill="#f3e4b5">Marsel's</text>
+        <line x1="74" y1="291" x2="126" y2="291" stroke="#c9a24f" stroke-width=".8"/>
+        <text x="100" y="304" text-anchor="middle" font-family="Montserrat, sans-serif" font-weight="600" font-size="7" letter-spacing="2.2" fill="#f6f1e7">SPECIAL SAUCE</text>
+        <path d="M100 318l5 6-5 6-5-6z" fill="url(#gold)"/>
+        <path d="M78 324h14M108 324h14" stroke="#c9a24f" stroke-width=".8"/>
+        <text x="100" y="350" text-anchor="middle" font-family="Montserrat, sans-serif" font-weight="500" font-size="4.6" letter-spacing=".9" fill="#c9a24f">HOT SAUCE · 5 FL OZ</text>
+        <path d="M65 150c-7 22-8 70-7 228" stroke="#fff" stroke-opacity=".16" stroke-width="5" stroke-linecap="round" fill="none"/>
+        <path d="M139 190c3 30 3 90 2 170" stroke="#fff" stroke-opacity=".07" stroke-width="3" stroke-linecap="round" fill="none"/>
       </symbol>
       <symbol id="gift" viewBox="0 0 200 200">
-        <rect x="30" y="84" width="140" height="100" rx="8" fill="#c8102e" stroke="#1d1a17" stroke-width="5"/>
-        <rect x="20" y="62" width="160" height="32" rx="8" fill="#8f0a1f" stroke="#1d1a17" stroke-width="5"/>
-        <rect x="88" y="62" width="24" height="122" fill="#f5b700" stroke="#1d1a17" stroke-width="5"/>
-        <path d="M100 62c-30-34-62-20-48-4 8 9 30 6 48 4zM100 62c30-34 62-20 48-4-8 9-30 6-48 4z" fill="#f5b700" stroke="#1d1a17" stroke-width="5" stroke-linejoin="round"/>
-        <text x="100" y="152" text-anchor="middle" font-family="Shrikhand, cursive" font-size="22" fill="#fff6e5" transform="rotate(-6 100 150)">M</text>
+        <rect x="34" y="84" width="132" height="96" rx="2" fill="#12100c"/>
+        <rect x="26" y="64" width="148" height="26" rx="2" fill="#1d1914"/>
+        <rect x="94" y="64" width="12" height="116" fill="url(#gold)"/>
+        <path d="M100 64c-18-26-46-20-38-6 6 10 24 8 38 6zM100 64c18-26 46-20 38-6-6 10-24 8-38 6z" fill="none" stroke="url(#gold)" stroke-width="4"/>
+        <text x="64" y="146" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-style="italic" font-weight="600" font-size="30" fill="#e8c766">M</text>
       </symbol>
       <symbol id="tee" viewBox="0 0 200 200">
-        <path d="M62 24l24-8c4 12 24 12 28 0l24 8 44 34-20 32-18-12v104H56V78L38 90 18 58z" fill="#1d1a17" stroke="#1d1a17" stroke-width="4" stroke-linejoin="round"/>
-        <text x="100" y="100" text-anchor="middle" font-family="Shrikhand, cursive" font-size="22" fill="#f5b700">Sauce</text>
-        <text x="100" y="124" text-anchor="middle" font-family="Shrikhand, cursive" font-size="22" fill="#f5b700">Boss</text>
-        <path d="M92 138c6-4 14-3 18 2 6 8 0 24-16 26 8-6 10-14 6-20-3 4-8 4-8-8z" fill="#c8102e"/>
+        <path d="M62 24l24-8c4 12 24 12 28 0l24 8 44 34-20 32-18-12v104H56V78L38 90 18 58z" fill="#12100c"/>
+        <text x="100" y="104" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-style="italic" font-weight="600" font-size="24" fill="#e8c766">Marsel's</text>
+        <text x="100" y="118" text-anchor="middle" font-family="Montserrat, sans-serif" font-weight="600" font-size="6" letter-spacing="2" fill="#f6f1e7">SPECIAL SAUCE</text>
       </symbol>
       <symbol id="hat" viewBox="0 0 200 200">
-        <path d="M38 126c0-56 26-80 62-80s62 24 62 80z" fill="#c8102e" stroke="#1d1a17" stroke-width="5" stroke-linejoin="round"/>
-        <path d="M100 46v80" stroke="#1d1a17" stroke-width="3" opacity=".35"/>
-        <path d="M30 126h146c16 0 18 22 0 24-36 4-110 4-146-6-8-2-8-18 0-18z" fill="#8f0a1f" stroke="#1d1a17" stroke-width="5" stroke-linejoin="round"/>
-        <circle cx="100" cy="44" r="7" fill="#1d1a17"/>
-        <text x="72" y="108" text-anchor="middle" font-family="Shrikhand, cursive" font-size="28" fill="#fff6e5">M</text>
+        <path d="M38 126c0-56 26-80 62-80s62 24 62 80z" fill="#12100c"/>
+        <path d="M30 126h146c16 0 18 22 0 24-36 4-110 4-146-6-8-2-8-18 0-18z" fill="#1d1914"/>
+        <circle cx="100" cy="46" r="6" fill="url(#gold)"/>
+        <text x="100" y="108" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-style="italic" font-weight="600" font-size="34" fill="#e8c766">M</text>
+      </symbol>
+      <symbol id="i-bag" viewBox="0 0 24 24">
+        <path d="M5 8h14l-1.2 12H6.2L5 8z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+        <path d="M9 8V6.5a3 3 0 0 1 6 0V8" fill="none" stroke="currentColor" stroke-width="1.6"/>
+      </symbol>
+      <symbol id="i-search" viewBox="0 0 24 24">
+        <circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/>
+        <path d="M16 16l4.5 4.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
       </symbol>
     </defs>
   </svg>
 
   <a class="skip-link" href="#main">Skip to content</a>
-
   <div class="announce" role="note">
-    🔥 <strong>Free shipping</strong> on orders $35+ &nbsp;·&nbsp; Join the Sauce Squad for <strong>10% off</strong>
+    <strong>Free shipping</strong> on orders $35+  <span class="sep">·</span>  Join the Sauce Squad for <strong>10% off</strong>
   </div>
 
   <header class="site-header">
@@ -232,7 +247,7 @@
       </ul>
       <div class="nav-actions">
         <button class="cart-btn" type="button" aria-controls="cart" aria-expanded="false" data-open-cart>
-          <span aria-hidden="true">🛒</span> <span class="cart-label">Cart</span> <span class="cart-count" data-cart-count>0</span>
+          <svg class="icon" aria-hidden="true"><use href="#i-bag"/></svg> <span class="cart-label">Cart</span> <span class="cart-count" data-cart-count>0</span>
         </button>
         <button class="menu-btn" type="button" aria-controls="site-menu" aria-expanded="false" aria-label="Open menu" data-menu-btn>
           <span></span><span></span><span></span>
@@ -256,16 +271,16 @@
           <h1>Saucy Recipes</h1>
           <p class="lede">Easy, crowd-pleasing hot sauce recipes for breakfast, game day, pizza night and happy hour. Every one of them is better with a few dashes of Marsel's.</p>
           <ul class="trust">
-            <li>⏱️ Most under 30 min</li>
-            <li>🛒 Pantry ingredients</li>
-            <li>🌶️ Heat you control</li>
+            <li>Most under 30 min</li>
+            <li>Pantry ingredients</li>
+            <li>Heat you control</li>
           </ul>
         </div>
         <div class="recipe-hero-art" aria-hidden="true">
           <div class="burst burst-sm"></div>
-          <span class="float-food f1">🍗</span>
-          <span class="float-food f2">🌮</span>
-          <span class="float-food f3">🍕</span>
+          <span class="float-food f1"></span>
+          <span class="float-food f2"></span>
+          <span class="float-food f3"></span>
           <svg class="ph-bottle" viewBox="0 0 200 420"><use href="#bottle"/></svg>
         </div>
       </div>
@@ -276,7 +291,6 @@
       <div class="wrap fr-grid">
         <div class="fr-art" aria-hidden="true">
           <span class="fr-badge">Recipe of the week</span>
-          <span class="fr-emoji">🍗</span>
           <svg class="fr-bottle" viewBox="0 0 200 420"><use href="#bottle"/></svg>
         </div>
         <article class="fr-body">
@@ -284,9 +298,9 @@
           <h2 id="featured-title">Oven-Crispy Hot Wings</h2>
           <p class="fr-desc">Shatteringly crisp wings with no deep fryer, tossed in a buttery Marsel's sauce. The secret is baking powder — it dries the skin so it crackles in the oven.</p>
           <ul class="rc-meta">
-            <li class="recipe-tag">⏱️ 60 min</li>
-            <li class="recipe-tag">🍽️ Serves 4</li>
-            <li class="recipe-tag" aria-label="Heat level 2 of 3">🌶️🌶️</li>
+            <li class="recipe-tag">60 min</li>
+            <li class="recipe-tag">Serves 4</li>
+            <li class="recipe-tag tag-heat" aria-label="Heat level 2 of 3">Medium heat</li>
           </ul>
           <div class="fr-cols">
             <div>
@@ -319,21 +333,19 @@
       <div class="wrap">
         <p class="eyebrow center">The recipe box</p>
         <h2 id="all-title" class="center">What are we making?</h2>
-
         <div class="filters filters-center" role="group" aria-label="Filter recipes" data-recipe-filters>
           <button type="button" data-rfilter="all" aria-pressed="true">All</button>
-          <button type="button" data-rfilter="breakfast" aria-pressed="false">🍳 Breakfast</button>
-          <button type="button" data-rfilter="mains" aria-pressed="false">🍕 Mains</button>
-          <button type="button" data-rfilter="sides" aria-pressed="false">🥔 Sides</button>
-          <button type="button" data-rfilter="sauces" aria-pressed="false">🥣 Sauces &amp; Dips</button>
-          <button type="button" data-rfilter="drinks" aria-pressed="false">🍹 Drinks</button>
+          <button type="button" data-rfilter="breakfast" aria-pressed="false">Breakfast</button>
+          <button type="button" data-rfilter="mains" aria-pressed="false">Mains</button>
+          <button type="button" data-rfilter="sides" aria-pressed="false">Sides</button>
+          <button type="button" data-rfilter="sauces" aria-pressed="false">Sauces &amp; Dips</button>
+          <button type="button" data-rfilter="drinks" aria-pressed="false">Drinks</button>
         </div>
-
         <div class="recipe-grid" data-recipe-grid>
           <article class="recipe-card" id="honey-butter" data-category="sauces">
-            <div class="rc-art bg-yellow" aria-hidden="true">🍯</div>
+            <div class="rc-art bg-yellow" aria-hidden="true">Sauces &amp; Dips</div>
             <div class="rc-body">
-              <ul class="rc-meta"><li class="recipe-tag">5 min</li><li class="recipe-tag" aria-label="Heat level 1 of 3">🌶️</li></ul>
+              <ul class="rc-meta"><li class="recipe-tag">5 min</li><li class="recipe-tag tag-heat" aria-label="Heat level 1 of 3">Mild heat</li></ul>
               <h3>Spicy Honey Butter</h3>
               <p>Sweet, salty, spicy. Slather it on cornbread, biscuits, grilled corn or fried chicken.</p>
               <details class="rc-details">
@@ -347,9 +359,9 @@
           </article>
 
           <article class="recipe-card" id="spicy-mayo" data-category="sauces">
-            <div class="rc-art bg-cream" aria-hidden="true">🍟</div>
+            <div class="rc-art bg-cream" aria-hidden="true">Sauces &amp; Dips</div>
             <div class="rc-body">
-              <ul class="rc-meta"><li class="recipe-tag">5 min</li><li class="recipe-tag" aria-label="Heat level 2 of 3">🌶️🌶️</li></ul>
+              <ul class="rc-meta"><li class="recipe-tag">5 min</li><li class="recipe-tag tag-heat" aria-label="Heat level 2 of 3">Medium heat</li></ul>
               <h3>Upgraded Spicy Mayo</h3>
               <p>Garlicky and lime-bright. The best burger, fry and sandwich sauce you'll ever make.</p>
               <details class="rc-details">
@@ -363,9 +375,9 @@
           </article>
 
           <article class="recipe-card" id="hot-honey-pizza" data-category="mains">
-            <div class="rc-art bg-red" aria-hidden="true">🍕</div>
+            <div class="rc-art bg-red" aria-hidden="true">Mains</div>
             <div class="rc-body">
-              <ul class="rc-meta"><li class="recipe-tag">25 min</li><li class="recipe-tag" aria-label="Heat level 2 of 3">🌶️🌶️</li></ul>
+              <ul class="rc-meta"><li class="recipe-tag">25 min</li><li class="recipe-tag tag-heat" aria-label="Heat level 2 of 3">Medium heat</li></ul>
               <h3>Hot Honey Pepperoni Pizza</h3>
               <p>Crispy-edged pepperoni pizza finished with a sticky sweet-heat drizzle.</p>
               <details class="rc-details">
@@ -379,9 +391,9 @@
           </article>
 
           <article class="recipe-card" id="breakfast-tacos" data-category="breakfast">
-            <div class="rc-art bg-green" aria-hidden="true">🌮</div>
+            <div class="rc-art bg-green" aria-hidden="true">Breakfast</div>
             <div class="rc-body">
-              <ul class="rc-meta"><li class="recipe-tag">15 min</li><li class="recipe-tag" aria-label="Heat level 1 of 3">🌶️</li></ul>
+              <ul class="rc-meta"><li class="recipe-tag">15 min</li><li class="recipe-tag tag-heat" aria-label="Heat level 1 of 3">Mild heat</li></ul>
               <h3>Saucy Breakfast Tacos</h3>
               <p>Soft scrambled eggs, melty cheese and avocado, finished with plenty of dashes.</p>
               <details class="rc-details">
@@ -395,9 +407,9 @@
           </article>
 
           <article class="recipe-card" id="mac-and-cheese" data-category="sides mains">
-            <div class="rc-art bg-yellow" aria-hidden="true">🧀</div>
+            <div class="rc-art bg-yellow" aria-hidden="true">Sides</div>
             <div class="rc-body">
-              <ul class="rc-meta"><li class="recipe-tag">25 min</li><li class="recipe-tag" aria-label="Heat level 1 of 3">🌶️</li></ul>
+              <ul class="rc-meta"><li class="recipe-tag">25 min</li><li class="recipe-tag tag-heat" aria-label="Heat level 1 of 3">Mild heat</li></ul>
               <h3>Kicked-Up Mac &amp; Cheese</h3>
               <p>Creamy stovetop mac with Marsel's stirred right into the cheese sauce.</p>
               <details class="rc-details">
@@ -411,9 +423,9 @@
           </article>
 
           <article class="recipe-card" id="potatoes" data-category="sides">
-            <div class="rc-art bg-cream" aria-hidden="true">🥔</div>
+            <div class="rc-art bg-cream" aria-hidden="true">Sides</div>
             <div class="rc-body">
-              <ul class="rc-meta"><li class="recipe-tag">40 min</li><li class="recipe-tag" aria-label="Heat level 2 of 3">🌶️🌶️</li></ul>
+              <ul class="rc-meta"><li class="recipe-tag">40 min</li><li class="recipe-tag tag-heat" aria-label="Heat level 2 of 3">Medium heat</li></ul>
               <h3>Crispy Spicy Potatoes</h3>
               <p>Golden roasted baby potatoes tossed in hot sauce butter. Dangerously snackable.</p>
               <details class="rc-details">
@@ -427,9 +439,9 @@
           </article>
 
           <article class="recipe-card" id="bloody-mary" data-category="drinks">
-            <div class="rc-art bg-red" aria-hidden="true">🍅</div>
+            <div class="rc-art bg-red" aria-hidden="true">Drinks</div>
             <div class="rc-body">
-              <ul class="rc-meta"><li class="recipe-tag">5 min</li><li class="recipe-tag" aria-label="Heat level 3 of 3">🌶️🌶️🌶️</li></ul>
+              <ul class="rc-meta"><li class="recipe-tag">5 min</li><li class="recipe-tag tag-heat" aria-label="Heat level 3 of 3">Hot heat</li></ul>
               <h3>Marsel's Bloody Mary</h3>
               <p>Bright, garlicky and properly spicy. Brunch just got serious.</p>
               <details class="rc-details">
@@ -443,9 +455,9 @@
           </article>
 
           <article class="recipe-card" id="michelada" data-category="drinks">
-            <div class="rc-art bg-ink" aria-hidden="true">🍺</div>
+            <div class="rc-art bg-ink" aria-hidden="true">Drinks</div>
             <div class="rc-body">
-              <ul class="rc-meta"><li class="recipe-tag">5 min</li><li class="recipe-tag" aria-label="Heat level 2 of 3">🌶️🌶️</li></ul>
+              <ul class="rc-meta"><li class="recipe-tag">5 min</li><li class="recipe-tag tag-heat" aria-label="Heat level 2 of 3">Medium heat</li></ul>
               <h3>Spicy Michelada</h3>
               <p>Cold beer, lime, chili salt and Marsel's. Patio season in a glass.</p>
               <details class="rc-details">
@@ -480,7 +492,6 @@
     <!-- ===== SHARE YOURS ===== -->
     <section class="share" aria-labelledby="share-title">
       <div class="wrap share-inner">
-        <div class="share-emoji" aria-hidden="true">📸</div>
         <div>
           <h2 id="share-title">Made something saucy?</h2>
           <p>Tag <strong>@marselsspecialsauce</strong> and use <strong>#PutItOnEverything</strong>. Our favorite creations get featured right here.</p>
@@ -493,7 +504,7 @@
     <section class="squad" aria-labelledby="squad-title">
       <div class="wrap squad-inner">
         <div>
-          <h2 id="squad-title">Get a new recipe every week 🌶️</h2>
+          <h2 id="squad-title">Get a new recipe every week</h2>
           <p>Join the Sauce Squad for weekly recipes, early access to new flavors and <strong>10% off your first order</strong>.</p>
         </div>
         <form class="squad-form" data-signup novalidate>
@@ -564,7 +575,6 @@
       <p class="fine center">Taxes &amp; shipping calculated at checkout</p>
     </div>
   </aside>
-
   <div class="toast" role="status" aria-live="polite" data-toast></div>
 
   <script src="main.js" defer></script>

@@ -79,7 +79,7 @@ function renderCart() {
   const left = FREE_SHIP - total;
   $("[data-ship-msg]").textContent = left > 0
     ? `You're ${money(left)} away from free shipping!`
-    : "🎉 You unlocked free shipping!";
+    : "You've unlocked free shipping.";
   $("[data-ship-bar]").style.width = `${Math.min(100, (total / FREE_SHIP) * 100)}%`;
   renderShipCheck(total);
 
@@ -119,7 +119,7 @@ function renderShipCheck(total) {
     msg.textContent = `You're ${money(left)} away from free shipping. A Triple Threat would do it!`;
     cta.textContent = "Top up your cart";
   } else {
-    title.textContent = `Your cart: ${money(total)} 🎉`;
+    title.textContent = `Your cart: ${money(total)}`;
     msg.textContent = "You've unlocked free shipping. Nice work.";
     cta.textContent = "Keep shopping";
   }
@@ -165,7 +165,7 @@ $$("[data-add]").forEach((btn) => {
     const variantEl = card && $("[data-variant]", card);
     addToCart(id, sub, variantEl ? variantEl.value : "");
     pepperBurst(e.clientX, e.clientY);
-    toast(`🌶️ ${PRODUCTS[id].name} added to your stash!`);
+    toast(`${PRODUCTS[id].name} added to your cart.`);
     setTimeout(openCart, reduceMotion ? 0 : 450);
   });
 });
@@ -218,23 +218,22 @@ document.addEventListener("click", (e) => {
   e.preventDefault();
   setMenu(false);
   const name = (link.querySelector("strong") || link).textContent.replace("→", "").trim();
-  toast(`🌶️ "${name}" is still simmering. Coming soon!`);
+  toast(`${name} is coming soon.`);
 });
 
 /* ---------- Fun bits ---------- */
 function pepperBurst(x, y) {
   if (reduceMotion) return;
-  const emojis = ["🌶️", "🔥", "🌶️", "✨"];
-  for (let i = 0; i < 14; i++) {
+  // A small burst of gold sparks from the click point
+  for (let i = 0; i < 12; i++) {
     const el = document.createElement("span");
     el.className = "confetti";
-    el.textContent = emojis[i % emojis.length];
     el.style.left = `${x}px`;
     el.style.top = `${y}px`;
     const angle = Math.random() * Math.PI * 2;
-    const dist = 80 + Math.random() * 120;
+    const dist = 40 + Math.random() * 70;
     el.style.setProperty("--dx", `${Math.cos(angle) * dist}px`);
-    el.style.setProperty("--dy", `${Math.sin(angle) * dist - 60}px`);
+    el.style.setProperty("--dy", `${Math.sin(angle) * dist - 30}px`);
     el.style.setProperty("--r", `${Math.random() * 720 - 360}deg`);
     document.body.append(el);
     setTimeout(() => el.remove(), 1000);
@@ -272,7 +271,7 @@ if (bottle) {
     bottle.classList.remove("shake"); void bottle.offsetWidth; bottle.classList.add("shake");
     pepperBurst(e.clientX, e.clientY);
   });
-  bottle.addEventListener("animationend", (e) => { if (e.animationName === "shake") bottle.classList.remove("shake"); });
+  bottle.addEventListener("animationend", (e) => { if (e.animationName === "tilt") bottle.classList.remove("shake"); });
 }
 
 /* ---------- Bravery slider (home page) ---------- */
@@ -287,7 +286,7 @@ if (brave) {
   ];
   const renderBrave = () => {
     const b = BRAVE[brave.value - 1];
-    $("[data-brave-peppers]").textContent = "🌶️".repeat(b.n);
+    $("[data-brave-peppers]").innerHTML = Array.from({ length: 5 }, (_, i) => `<span class="bar${i < b.n ? " on" : ""}"></span>`).join("");
     $("[data-brave-title]").textContent = b.title;
     $("[data-brave-text]").textContent = b.text;
   };
@@ -299,21 +298,18 @@ if (brave) {
 const chips = $("[data-chips]");
 if (chips) {
   const MATCHES = {
-    eggs:   { e: "🍳", t: "Scrambled, fried, or deviled", x: "Three dashes right on top while they're still hot. The garlic and lime cut through the richness of the yolk like they were made for each other.", d: "3 dashes" },
-    tacos:  { e: "🌮", t: "Street tacos & burritos", x: "Drizzle over carne asada, fish or roasted veggie tacos. The citrus brightens everything, so you might skip the lime wedge.", d: "A generous drizzle" },
-    wings:  { e: "🍗", t: "Game-day wings", x: "Whisk ¼ cup of sauce with 3 tbsp melted butter and toss with crispy wings. Instant buffalo-style with way more flavor.", d: "¼ cup per 2 lbs" },
-    pizza:  { e: "🍕", t: "Pizza night", x: "Swirl it over a hot slice or mix with honey for a sweet-heat drizzle on pepperoni. Better than chili flakes, every time.", d: "A zig-zag per slice" },
-    mac:    { e: "🧀", t: "Mac & cheese", x: "Stir a tablespoon into the cheese sauce, then dot more on top before serving. Creamy, cheesy, with a kick.", d: "1 tbsp + extra on top" },
-    drinks: { e: "🍹", t: "Bloody Marys & micheladas", x: "Add 4–6 dashes to your Bloody Mary or michelada mix. It's the secret ingredient bartenders ask about.", d: "4–6 dashes" },
+    eggs:   { t: "Scrambled, fried, or deviled", x: "Three dashes right on top while they're still hot. The garlic and lime cut through the richness of the yolk like they were made for each other.", d: "3 dashes" },
+    tacos:  { t: "Street tacos & burritos", x: "Drizzle over carne asada, fish or roasted veggie tacos. The citrus brightens everything, so you might skip the lime wedge.", d: "A generous drizzle" },
+    wings:  { t: "Game-day wings", x: "Whisk ¼ cup of sauce with 3 tbsp melted butter and toss with crispy wings. Instant buffalo-style with way more flavor.", d: "¼ cup per 2 lbs" },
+    pizza:  { t: "Pizza night", x: "Swirl it over a hot slice or mix with honey for a sweet-heat drizzle on pepperoni. Better than chili flakes, every time.", d: "A zig-zag per slice" },
+    mac:    { t: "Mac & cheese", x: "Stir a tablespoon into the cheese sauce, then dot more on top before serving. Creamy, cheesy, with a kick.", d: "1 tbsp + extra on top" },
+    drinks: { t: "Bloody Marys & micheladas", x: "Add 4–6 dashes to your Bloody Mary or michelada mix. It's the secret ingredient bartenders ask about.", d: "4–6 dashes" },
   };
   chips.addEventListener("click", (e) => {
     const b = e.target.closest("[data-food]");
     if (!b) return;
     $$("[data-food]", chips).forEach((c) => c.setAttribute("aria-selected", c === b ? "true" : "false"));
     const m = MATCHES[b.dataset.food];
-    const emoji = $("[data-match-emoji]");
-    emoji.textContent = m.e;
-    emoji.style.animation = "none"; void emoji.offsetWidth; emoji.style.animation = "";
     $("[data-match-title]").textContent = m.t;
     $("[data-match-text]").textContent = m.x;
     $("[data-match-dose]").textContent = m.d;
@@ -385,9 +381,9 @@ if (recipeFilters) {
 const storeList = $("[data-store-list]");
 if (storeList) {
   const TYPE = {
-    shop: { emoji: "🛒", label: "Shop" },
-    restaurant: { emoji: "🍽️", label: "Restaurant" },
-    bar: { emoji: "🍺", label: "Bar" },
+    shop: { short: "Shop", label: "Shop" },
+    restaurant: { short: "Dine", label: "Restaurant" },
+    bar: { short: "Bar", label: "Bar" },
   };
   const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   const searchForm = $("[data-store-search]");
@@ -415,7 +411,7 @@ if (storeList) {
         ? ""
         : `<a class="btn btn-ghost btn-sm" href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${s.name} ${where}`)}" target="_blank" rel="noopener">Directions</a>`;
       return `<li class="store-card">
-        <span class="store-emoji" aria-hidden="true">${t.emoji}</span>
+        <span class="store-emoji" aria-hidden="true">${t.short}</span>
         <div class="store-info">
           <h3>${esc(s.name)}${s.sample ? ' <span class="sample-tag">Sample</span>' : ""}</h3>
           <p>${esc(s.address)}<br>${esc(s.city)}, ${esc(s.state)} ${esc(s.zip)}</p>
@@ -433,7 +429,7 @@ if (storeList) {
 
     $("[data-map-pins]").innerHTML = matches.map((s, i) => {
       const { x, y } = pinSpot(s.name);
-      return `<span class="map-pin" style="left:${x}%;top:${y}%;animation-delay:${i * 0.12}s"><i>${TYPE[s.type].emoji}</i></span>`;
+      return `<span class="map-pin" style="left:${x}%;top:${y}%;animation-delay:${i * 0.12}s"></span>`;
     }).join("");
   };
 
@@ -531,7 +527,7 @@ if (signup) {
       }
     }
     track("sign_up", { method: "newsletter" });
-    msg.textContent = "🔥 You're in! Check your inbox for your 10% off code.";
+    msg.textContent = "You're in. Check your inbox for your 10% off code.";
     form.reset();
   });
 }

@@ -9,7 +9,7 @@
   <meta name="description" content="Marsel's Special Sauce is a small-batch, all-natural hot sauce with bold flavor and a heat that builds. Perfect on wings, tacos, eggs and pizza. Order direct and get free shipping over $35.">
   <link rel="canonical" href="https://www.marselsspecialsauce.com/">
   <meta name="robots" content="index, follow, max-image-preview:large">
-  <meta name="theme-color" content="#c8102e">
+  <meta name="theme-color" content="#12100c">
 
   <!-- Open Graph / social sharing -->
   <meta property="og:type" content="website">
@@ -22,13 +22,11 @@
   <meta name="twitter:title" content="Marsel's Special Sauce – Small-Batch Hot Sauce">
   <meta name="twitter:description" content="Flavor first, fire second. Small-batch hot sauce made to put on everything.">
   <meta name="twitter:image" content="https://www.marselsspecialsauce.com/assets/og-image.jpg">
-
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="site.webmanifest">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Shrikhand&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Lato:wght@400;700&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 
   <!-- Structured data: helps Google show price, availability and FAQ rich results -->
@@ -109,59 +107,73 @@
 </head>
 <body>
 
-  <!-- Reusable bottle illustration (swap for real product photos when you have them) -->
+  <!-- Shared illustrations (same set on every page so cart thumbnails always render).
+       Swap for real product photography when you have it. -->
   <svg width="0" height="0" style="position:absolute" aria-hidden="true">
     <defs>
       <linearGradient id="glass" x1="0" x2="1">
-        <stop offset="0" stop-color="#8f0a1f"/>
-        <stop offset=".45" stop-color="#e3242b"/>
-        <stop offset="1" stop-color="#7a0819"/>
+        <stop offset="0" stop-color="#3a0806"/>
+        <stop offset=".38" stop-color="#8e1c15"/>
+        <stop offset=".55" stop-color="#a6261c"/>
+        <stop offset="1" stop-color="#2b0604"/>
+      </linearGradient>
+      <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#f3dc95"/>
+        <stop offset=".45" stop-color="#c9a24f"/>
+        <stop offset=".72" stop-color="#a9853b"/>
+        <stop offset="1" stop-color="#e9cf86"/>
       </linearGradient>
       <symbol id="bottle" viewBox="0 0 200 420">
-        <rect x="80" y="8" width="40" height="44" rx="7" fill="#1d1a17"/>
-        <rect x="80" y="40" width="40" height="6" fill="#f5b700"/>
         <path d="M87 52h26v70c0 22 37 34 37 78v190c0 14-9 22-22 22H72c-13 0-22-8-22-22V200c0-44 37-56 37-78z" fill="url(#glass)"/>
-        <rect x="58" y="222" width="84" height="132" rx="10" fill="#fff6e5"/>
-        <rect x="58" y="222" width="84" height="22" rx="10" fill="#f5b700"/>
-        <rect x="58" y="234" width="84" height="10" fill="#f5b700"/>
-        <text x="100" y="238" text-anchor="middle" font-family="Bricolage Grotesque, sans-serif" font-weight="800" font-size="9" fill="#1d1a17" letter-spacing="1">SINCE DAY 1</text>
-        <text x="100" y="278" text-anchor="middle" font-family="Shrikhand, cursive" font-size="18" fill="#c8102e">Marsel's</text>
-        <text x="100" y="298" text-anchor="middle" font-family="Bricolage Grotesque, sans-serif" font-weight="800" font-size="9" fill="#1d1a17" letter-spacing="1">SPECIAL SAUCE</text>
-        <path d="M92 314c6-4 14-3 18 2 6 8 0 24-16 26 8-6 10-14 6-20-3 4-8 4-8-8z" fill="#c8102e"/>
-        <path d="M106 312c2-4 6-6 10-5-3 1-6 3-7 6z" fill="#2f8f3a"/>
-        <path d="M66 140c-8 20-8 60-6 230" stroke="#fff" stroke-opacity=".28" stroke-width="7" stroke-linecap="round" fill="none"/>
+        <rect x="82" y="6" width="36" height="50" rx="3" fill="#15120e"/>
+        <path d="M88 12v38M94 12v38M100 12v38M106 12v38M112 12v38" stroke="#2a251e" stroke-width="1.2"/>
+        <rect x="82" y="44" width="36" height="8" fill="url(#gold)"/>
+        <rect x="86" y="62" width="28" height="16" fill="url(#gold)"/>
+        <text x="100" y="73" text-anchor="middle" font-family="Montserrat, sans-serif" font-weight="700" font-size="5" letter-spacing="1" fill="#12100c">M·S·S</text>
+        <rect x="56" y="214" width="88" height="148" rx="2" fill="#12100c"/>
+        <rect x="61" y="219" width="78" height="138" rx="1" fill="none" stroke="url(#gold)" stroke-width="1"/>
+        <text x="100" y="244" text-anchor="middle" font-family="Montserrat, sans-serif" font-weight="600" font-size="5.5" letter-spacing="2" fill="#e8c766">SMALL BATCH</text>
+        <text x="100" y="281" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-style="italic" font-weight="600" font-size="25" fill="#f3e4b5">Marsel's</text>
+        <line x1="74" y1="291" x2="126" y2="291" stroke="#c9a24f" stroke-width=".8"/>
+        <text x="100" y="304" text-anchor="middle" font-family="Montserrat, sans-serif" font-weight="600" font-size="7" letter-spacing="2.2" fill="#f6f1e7">SPECIAL SAUCE</text>
+        <path d="M100 318l5 6-5 6-5-6z" fill="url(#gold)"/>
+        <path d="M78 324h14M108 324h14" stroke="#c9a24f" stroke-width=".8"/>
+        <text x="100" y="350" text-anchor="middle" font-family="Montserrat, sans-serif" font-weight="500" font-size="4.6" letter-spacing=".9" fill="#c9a24f">HOT SAUCE · 5 FL OZ</text>
+        <path d="M65 150c-7 22-8 70-7 228" stroke="#fff" stroke-opacity=".16" stroke-width="5" stroke-linecap="round" fill="none"/>
+        <path d="M139 190c3 30 3 90 2 170" stroke="#fff" stroke-opacity=".07" stroke-width="3" stroke-linecap="round" fill="none"/>
       </symbol>
       <symbol id="gift" viewBox="0 0 200 200">
-        <rect x="30" y="84" width="140" height="100" rx="8" fill="#c8102e" stroke="#1d1a17" stroke-width="5"/>
-        <rect x="20" y="62" width="160" height="32" rx="8" fill="#8f0a1f" stroke="#1d1a17" stroke-width="5"/>
-        <rect x="88" y="62" width="24" height="122" fill="#f5b700" stroke="#1d1a17" stroke-width="5"/>
-        <path d="M100 62c-30-34-62-20-48-4 8 9 30 6 48 4zM100 62c30-34 62-20 48-4-8 9-30 6-48 4z" fill="#f5b700" stroke="#1d1a17" stroke-width="5" stroke-linejoin="round"/>
-        <text x="100" y="152" text-anchor="middle" font-family="Shrikhand, cursive" font-size="22" fill="#fff6e5" transform="rotate(-6 100 150)">M</text>
+        <rect x="34" y="84" width="132" height="96" rx="2" fill="#12100c"/>
+        <rect x="26" y="64" width="148" height="26" rx="2" fill="#1d1914"/>
+        <rect x="94" y="64" width="12" height="116" fill="url(#gold)"/>
+        <path d="M100 64c-18-26-46-20-38-6 6 10 24 8 38 6zM100 64c18-26 46-20 38-6-6 10-24 8-38 6z" fill="none" stroke="url(#gold)" stroke-width="4"/>
+        <text x="64" y="146" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-style="italic" font-weight="600" font-size="30" fill="#e8c766">M</text>
       </symbol>
       <symbol id="tee" viewBox="0 0 200 200">
-        <path d="M62 24l24-8c4 12 24 12 28 0l24 8 44 34-20 32-18-12v104H56V78L38 90 18 58z" fill="#1d1a17" stroke="#1d1a17" stroke-width="4" stroke-linejoin="round"/>
-        <text x="100" y="100" text-anchor="middle" font-family="Shrikhand, cursive" font-size="22" fill="#f5b700">Sauce</text>
-        <text x="100" y="124" text-anchor="middle" font-family="Shrikhand, cursive" font-size="22" fill="#f5b700">Boss</text>
-        <path d="M92 138c6-4 14-3 18 2 6 8 0 24-16 26 8-6 10-14 6-20-3 4-8 4-8-8z" fill="#c8102e"/>
+        <path d="M62 24l24-8c4 12 24 12 28 0l24 8 44 34-20 32-18-12v104H56V78L38 90 18 58z" fill="#12100c"/>
+        <text x="100" y="104" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-style="italic" font-weight="600" font-size="24" fill="#e8c766">Marsel's</text>
+        <text x="100" y="118" text-anchor="middle" font-family="Montserrat, sans-serif" font-weight="600" font-size="6" letter-spacing="2" fill="#f6f1e7">SPECIAL SAUCE</text>
       </symbol>
       <symbol id="hat" viewBox="0 0 200 200">
-        <path d="M38 126c0-56 26-80 62-80s62 24 62 80z" fill="#c8102e" stroke="#1d1a17" stroke-width="5" stroke-linejoin="round"/>
-        <path d="M100 46v80" stroke="#1d1a17" stroke-width="3" opacity=".35"/>
-        <path d="M30 126h146c16 0 18 22 0 24-36 4-110 4-146-6-8-2-8-18 0-18z" fill="#8f0a1f" stroke="#1d1a17" stroke-width="5" stroke-linejoin="round"/>
-        <circle cx="100" cy="44" r="7" fill="#1d1a17"/>
-        <text x="72" y="108" text-anchor="middle" font-family="Shrikhand, cursive" font-size="28" fill="#fff6e5">M</text>
+        <path d="M38 126c0-56 26-80 62-80s62 24 62 80z" fill="#12100c"/>
+        <path d="M30 126h146c16 0 18 22 0 24-36 4-110 4-146-6-8-2-8-18 0-18z" fill="#1d1914"/>
+        <circle cx="100" cy="46" r="6" fill="url(#gold)"/>
+        <text x="100" y="108" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-style="italic" font-weight="600" font-size="34" fill="#e8c766">M</text>
       </symbol>
-      <symbol id="pepper" viewBox="0 0 24 24">
-        <path d="M8 9c3-2 8-1 10 3 3 6-2 11-10 12 5-4 6-8 4-11-2 3-6 2-4-4z" fill="currentColor"/>
-        <path d="M13 8c1-3 4-5 7-4-3 1-5 2-6 5z" fill="#2f8f3a"/>
+      <symbol id="i-bag" viewBox="0 0 24 24">
+        <path d="M5 8h14l-1.2 12H6.2L5 8z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+        <path d="M9 8V6.5a3 3 0 0 1 6 0V8" fill="none" stroke="currentColor" stroke-width="1.6"/>
+      </symbol>
+      <symbol id="i-search" viewBox="0 0 24 24">
+        <circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/>
+        <path d="M16 16l4.5 4.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
       </symbol>
     </defs>
   </svg>
 
   <a class="skip-link" href="#main">Skip to content</a>
-
   <div class="announce" role="note">
-    🔥 <strong>Free shipping</strong> on orders $35+ &nbsp;·&nbsp; Join the Sauce Squad for <strong>10% off</strong>
+    <strong>Free shipping</strong> on orders $35+  <span class="sep">·</span>  Join the Sauce Squad for <strong>10% off</strong>
   </div>
 
   <header class="site-header">
@@ -178,7 +190,7 @@
       </ul>
       <div class="nav-actions">
         <button class="cart-btn" type="button" aria-controls="cart" aria-expanded="false" data-open-cart>
-          <span aria-hidden="true">🛒</span> <span class="cart-label">Cart</span> <span class="cart-count" data-cart-count>0</span>
+          <svg class="icon" aria-hidden="true"><use href="#i-bag"/></svg> <span class="cart-label">Cart</span> <span class="cart-count" data-cart-count>0</span>
         </button>
         <button class="menu-btn" type="button" aria-controls="site-menu" aria-expanded="false" aria-label="Open menu" data-menu-btn>
           <span></span><span></span><span></span>
@@ -201,15 +213,15 @@
             <a href="#pairings" class="btn btn-ghost">What goes with it?</a>
           </div>
           <ul class="trust">
-            <li>✅ All-natural</li>
-            <li>🌱 Vegan &amp; gluten free</li>
-            <li>📦 Ships in 48 hrs</li>
+            <li>All-natural</li>
+            <li>Vegan &amp; gluten free</li>
+            <li>Ships in 48 hrs</li>
           </ul>
         </div>
         <div class="hero-art">
           <div class="burst" aria-hidden="true"></div>
           <svg class="hero-bottle" viewBox="0 0 200 420" role="img" aria-label="Bottle of Marsel's Special Sauce"><use href="#bottle"/></svg>
-          <div class="sticker sticker-a">Medium<br>heat 🔥</div>
+          <div class="sticker sticker-a">Medium<br>heat</div>
           <div class="sticker sticker-b">Small<br>batch</div>
         </div>
       </div>
@@ -230,7 +242,6 @@
         <p class="eyebrow center">Order direct from the kitchen</p>
         <h2 id="shop-title" class="center">Pick your stash</h2>
         <p class="section-lede center">Every bottle ships straight from us — fresher sauce, and you're supporting a small business.</p>
-
         <div class="products">
           <article class="product" data-product="single">
             <div class="product-art"><svg viewBox="0 0 200 420" aria-hidden="true"><use href="#bottle"/></svg></div>
@@ -282,7 +293,6 @@
             <button class="btn btn-primary btn-block" type="button" data-add="party">Add to cart</button>
           </article>
         </div>
-
         <div class="section-cta">
           <a href="shop.html" class="btn btn-dark">Shop all sauces &amp; gifts →</a>
         </div>
@@ -304,7 +314,7 @@
           <p>Marsel's Special Sauce sits right in the sweet spot: hot enough to wake up your food, mellow enough to pour on with confidence. Most folks call it a <strong>solid 6 out of 10</strong>.</p>
           <div class="meter" role="img" aria-label="Heat level 6 out of 10">
             <div class="meter-fill" data-meter></div>
-            <div class="meter-labels"><span>Mild</span><span>Medium</span><span>Hot</span><span>🔥 Yikes</span></div>
+            <div class="meter-labels"><span>Mild</span><span>Medium</span><span>Hot</span><span>Extra hot</span></div>
           </div>
           <h3 class="ingredients-title">What's inside</h3>
           <ul class="ingredients">
@@ -317,7 +327,6 @@
           </ul>
           <p class="fine">No added sugar · No preservatives · No weird stuff. <!-- Confirm ingredients match your actual recipe/label. --></p>
         </div>
-
         <div class="brave-card">
           <h3>How brave are you feeling?</h3>
           <p>Slide to find your perfect pour.</p>
@@ -338,25 +347,21 @@
         <p class="eyebrow center">The Sauce Matchmaker</p>
         <h2 id="pairings-title" class="center">What are you eating tonight?</h2>
         <p class="section-lede center">Tap a dish and we'll tell you exactly how to sauce it.</p>
-
         <div class="chips" role="tablist" aria-label="Pick a dish" data-chips>
-          <button role="tab" aria-selected="true" data-food="eggs">🍳 Eggs</button>
-          <button role="tab" aria-selected="false" data-food="tacos">🌮 Tacos</button>
-          <button role="tab" aria-selected="false" data-food="wings">🍗 Wings</button>
-          <button role="tab" aria-selected="false" data-food="pizza">🍕 Pizza</button>
-          <button role="tab" aria-selected="false" data-food="mac">🧀 Mac &amp; Cheese</button>
-          <button role="tab" aria-selected="false" data-food="drinks">🍹 Bloody Mary</button>
+          <button role="tab" aria-selected="true" data-food="eggs">Eggs</button>
+          <button role="tab" aria-selected="false" data-food="tacos">Tacos</button>
+          <button role="tab" aria-selected="false" data-food="wings">Wings</button>
+          <button role="tab" aria-selected="false" data-food="pizza">Pizza</button>
+          <button role="tab" aria-selected="false" data-food="mac">Mac &amp; Cheese</button>
+          <button role="tab" aria-selected="false" data-food="drinks">Bloody Mary</button>
         </div>
-
         <div class="match" role="tabpanel" aria-live="polite" data-match>
-          <div class="match-emoji" data-match-emoji>🍳</div>
           <div>
             <h3 data-match-title>Scrambled, fried, or deviled</h3>
             <p data-match-text>Three dashes right on top while they're still hot. The garlic and lime cut through the richness of the yolk like they were made for each other.</p>
             <p class="match-dose"><span>Recommended dose:</span> <strong data-match-dose>3 dashes</strong></p>
           </div>
         </div>
-
         <div class="recipes">
           <article class="recipe">
             <span class="recipe-tag">5 min</span>
@@ -466,32 +471,26 @@
         <h2 id="explore-title" class="center">Explore the Sauce-iverse</h2>
         <div class="tiles">
           <a href="shop.html" class="tile tile-red">
-            <span class="tile-emoji" aria-hidden="true">🛍️</span>
             <strong>Shop</strong>
             <span>Bottles, bundles &amp; subscriptions</span>
           </a>
           <a href="shop.html#gifts" class="tile tile-yellow">
-            <span class="tile-emoji" aria-hidden="true">🎁</span>
             <strong>Gift Sets</strong>
             <span>The present that's actually used</span>
           </a>
           <a href="recipes.html" class="tile tile-cream">
-            <span class="tile-emoji" aria-hidden="true">👨‍🍳</span>
             <strong>Recipes</strong>
             <span>Wings, mayo, marinades &amp; more</span>
           </a>
           <a href="our-story.html" class="tile tile-ink">
-            <span class="tile-emoji" aria-hidden="true">📖</span>
             <strong>Our Story</strong>
             <span>From family kitchen to your fridge</span>
           </a>
           <a href="find-a-store.html" class="tile tile-green">
-            <span class="tile-emoji" aria-hidden="true">📍</span>
             <strong>Find a Store</strong>
             <span>Grab a bottle near you</span>
           </a>
           <a href="wholesale.html" class="tile tile-cream">
-            <span class="tile-emoji" aria-hidden="true">🍽️</span>
             <strong>Wholesale</strong>
             <span>For restaurants &amp; retailers</span>
           </a>
@@ -503,7 +502,7 @@
     <section class="squad" id="squad" aria-labelledby="squad-title">
       <div class="wrap squad-inner">
         <div>
-          <h2 id="squad-title">Join the Sauce Squad 🌶️</h2>
+          <h2 id="squad-title">Join the Sauce Squad</h2>
           <p>Get <strong>10% off your first order</strong>, early access to new flavors, and recipes that'll make you the hero of every cookout.</p>
         </div>
         <!-- Connect to your email platform (Klaviyo, Mailchimp, Shopify Email) by setting the form action in main.js -->
@@ -581,7 +580,6 @@
       <p class="fine center">Taxes &amp; shipping calculated at checkout</p>
     </div>
   </aside>
-
   <div class="toast" role="status" aria-live="polite" data-toast></div>
 
   <script src="main.js" defer></script>
